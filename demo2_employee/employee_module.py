@@ -53,4 +53,4 @@ class Employee:
             self.__emp_salary = value
         else:
             self.__emp_salary=0
-            # raise ValueError("Salary cannot be negative.!!!")
+            # raise ValueError("Salary cannot be negative.")
