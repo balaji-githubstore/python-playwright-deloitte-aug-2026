@@ -1,0 +1,51 @@
+XPath
+
+Absolute xpath (not recommended) - /html/body/div[1]/div/div/section[1]/div/div/div[2]/div/form/fieldset/div[1]/div/input
+
+Relative xpath - 
+//tagname[@attribute='']
+//tagname[text()='']
+
+
+Contains
+//tagname[contains(@attribute,'')]
+//tagname[contains(text(),'')]
+
+
+normalize-space - ignore the white space before and after the text and then check
+//tagname[normalize-space()='']
+//tagname[contains(normalize-space(),'')]
+
+
+Grouping of xpath - starts at 1
+(//button[text()='Accept All'])[1]
+
+
+Example: verify in chrome - ctrl+f
+//input[@id='Form_getForm_FullName']
+//button[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']
+//button[text()='Allow all']
+//input[@id='Form_getForm_CompanyName']
+//a[text()='Solutions']
+//input[contains(@id,'EmailHomePage')]
+//a[contains(text(),'AI Help Desk')]
+//a[normalize-space()='AI Help Desk']
+//a[contains(text(),'AI Help Desk')]
+//img[@alt='arrow btn']
+//img[contains(@src,'arrow.png')]
+
+//button[@id='onetrust-accept-btn-handler']
+
+
+
+//span[contains(text(),'valid password')]
+
+//strong[contains(text(),'Great for Balance')]
+
+
+Locator obj --> (
+<input type="text" name="FullName" class="text" 
+id="Form_getForm_FullName" tabindex="1" placeholder="Full Name*">
+)
+
+
