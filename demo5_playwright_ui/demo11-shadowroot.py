@@ -34,7 +34,8 @@ with sync_playwright() as p:
     actual_error=page.locator("div[class*='wes:text-red wes:transition-colors']").and_(page.locator("div:has-text('Enter valid phone number.')")).inner_text()
     print(actual_error)
 
+    actual_error=page.locator("div:has-text('Enter valid phone number.')").nth(12).inner_text()
+    print(actual_error)
+
     page.wait_for_timeout(5000)
     browser.close()
-
-    # will start at 11:35 AM IST

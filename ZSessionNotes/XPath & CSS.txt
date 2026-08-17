@@ -50,19 +50,29 @@ Example: verify in chrome - ctrl+f
 //a[contains(text(),'AI Help Desk')]
 //img[@alt='arrow btn']
 //img[contains(@src,'arrow.png')]
-
 //button[@id='onetrust-accept-btn-handler']
-
-
-
 //span[contains(text(),'valid password')]
-
 //strong[contains(text(),'Great for Balance')]
 
 
-Locator obj --> (
-<input type="text" name="FullName" class="text" 
-id="Form_getForm_FullName" tabindex="1" placeholder="Full Name*">
-)
+//div[contains(@class,'wes:text-red wes:transition-colors') and text()='Enter valid phone number.']
+
+-----------------------------------------------
+CSS Selector 
+#id
+tagname[attribute='']
+
+.classname
+[attribute='']
+
+Example: 
+#Form_getForm_FullName
+select[name='Country']
+input[placeholder='Full Name*']
+
+input[id='firstName']
+----------------------------------------------------
+
+page.locator("button:has-text('Allow all')").click()
 
 
