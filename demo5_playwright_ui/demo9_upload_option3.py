@@ -13,7 +13,8 @@ with sync_playwright() as p:
     page.on("filechooser",lambda filechooser:filechooser.set_files(r"D:\Mine\Balaji Dinakaran Trainer Profile AI 2026.pdf"))    
 
     # click on element that opens filechooser
-    page.locator("xpath=//span[text()='Select PDF file']").click()
+    page.locator("xpath=//span[text()='Select PDF file']").click()    
+    
 
     page.wait_for_timeout(10000)
     browser.close()

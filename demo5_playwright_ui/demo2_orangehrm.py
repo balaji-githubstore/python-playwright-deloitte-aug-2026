@@ -25,4 +25,6 @@ with sync_playwright() as p:
     page.locator("xpath=//input[@id='Form_getForm_action_submitForm']").click()
     time.sleep(5)
 
+    browser.close()
+
 

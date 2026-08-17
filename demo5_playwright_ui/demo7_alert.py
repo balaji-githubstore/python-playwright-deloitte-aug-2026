@@ -18,5 +18,10 @@ with sync_playwright() as p:
     # click on caculate fees
     page.locator("xpath=//a[@id='calculate-fee']").click()
 
+    page.locator("xpath=//a[@id='calculate-fee']").click()
+
+
+    page.locator("xpath=//a[@id='calculate-fee']").click()
+
     time.sleep(5)
     browser.close()

@@ -1,6 +1,7 @@
 from demo2_employee.employee_module import Employee
 
 Employee.company_name="Deloitte"
+Employee.company_name="Deloitte pvt ltd"
 print(Employee.company_name)
 
 
@@ -53,3 +54,13 @@ emp2.emp_salary=-9000
 
 print(emp1.emp_salary)
 print(emp2.emp_salary)
+
+name=Employee.get_company_name()
+
+
+emp5=Employee.get_employee_instance()
+emp5.display_employee_detail()
+emp5.get_employee_detail_as_list()
+
+ls=Employee.get_employee_instance().get_employee_detail_as_list()
+

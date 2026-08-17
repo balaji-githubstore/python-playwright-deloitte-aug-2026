@@ -37,7 +37,7 @@ class Employee:
         }
 
     @staticmethod
-    def get_employee_instance():
+    def get_employee_instance()->"Employee":
         emp=Employee(0,None,None)
         return emp
 

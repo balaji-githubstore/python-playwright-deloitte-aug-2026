@@ -14,7 +14,7 @@ with sync_playwright() as p:
         print(dialog.message),
         dialog.accept()
         ))  
-    
+
     # click on caculate fees
     page.locator("xpath=//a[@id='calculate-fee']").click()
 
