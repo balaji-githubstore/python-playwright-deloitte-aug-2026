@@ -11,5 +11,10 @@ with sync_playwright() as p:
     response = api_context.get("pet/findByStatus?status=sold")
 
     print(response.status)
-    # print(response.json())
-    print(response.json()[2]['status'])
+    print(response.json())
+
+    response_body=response.json()
+    print(response_body[0]['status'])
+    print(len(response_body))
+
+    # write for loop to print each status 

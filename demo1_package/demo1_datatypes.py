@@ -105,3 +105,15 @@ print(len(signal))
 print(5>20)
 
 
+
+for i in range(1,21):
+    print(i)
+
+
+colors=["red","green","yellow","black","blue"]
+
+for i in range(0,len(colors)):
+    print(colors[i])
+
+for color in colors:
+    print(color)
