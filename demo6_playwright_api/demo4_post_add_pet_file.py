@@ -5,7 +5,8 @@ import json
 with open("test_data/new_pet.json","r") as file:
     payload=json.load(file)
 
-
+# print(payload)
+# print(payload["id"])
 
 with sync_playwright() as p:
     api_context = p.request.new_context(base_url="https://petstore.swagger.io/v2/")
