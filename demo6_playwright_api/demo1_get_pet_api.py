@@ -8,7 +8,7 @@ with sync_playwright() as p:
     api_context = p.request.new_context(
         base_url="https://petstore.swagger.io/v2/")
 
-    response = api_context.get("pet/5")
+    response = api_context.get("pet/999")
 
     print(response.status)
     print(response.status_text)

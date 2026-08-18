@@ -18,3 +18,12 @@ with sync_playwright() as p:
     print(len(response_body))
 
     # write for loop to print each status 
+
+    for i in range(0,len(response_body)):
+        print(response_body[i]['status'])
+        assert  response_body[i]['status']=="sold"
+
+    for pet in response_body:
+        print(pet)
+        print(pet["status"])
+        assert  pet["status"]=="sold"

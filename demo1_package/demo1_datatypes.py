@@ -106,14 +106,25 @@ print(5>20)
 
 
 
-for i in range(1,21):
+for i in range(1,10):
     print(i)
 
 
 colors=["red","green","yellow","black","blue"]
 
 for i in range(0,len(colors)):
+    print(i)
     print(colors[i])
 
 for color in colors:
     print(color)
+
+numbers=[23,45,88,99,55,74]
+
+# print item >=50 
+
+for num in numbers:
+    if num>=50:
+        print(num)
+
+
