@@ -20,3 +20,4 @@ with sync_playwright() as p:
     assert response.status==200
     # assert response.ok
 
+# will start at 11:35 AM IST
