@@ -1,0 +1,39 @@
+{
+  "addPet": {
+    "id": 855,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "doggie-855",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "available"
+  },
+  "updatePet": {
+    "id": 855,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "doggie-855",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "available"
+  },
+  "deletePet": 855
+}

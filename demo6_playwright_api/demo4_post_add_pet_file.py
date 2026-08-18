@@ -1,26 +1,10 @@
 from playwright.sync_api import sync_playwright
+import json
 
-# test_add_valid_pet()
-# test_add_invalid_pet() 
 
-payload ={
-  "id": 999,
-  "category": {
-    "id": 0,
-    "name": "string"
-  },
-  "name": "doggie-999",
-  "photoUrls": [
-    "string"
-  ],
-  "tags": [
-    {
-      "id": 0,
-      "name": "string"
-    }
-  ],
-  "status": "available"
-}
+with open("test_data/new_pet.json","r") as file:
+    payload=json.load(file)
+
 
 
 with sync_playwright() as p:
@@ -31,7 +15,7 @@ with sync_playwright() as p:
     print(response.status)
     print(response.json())
 
-    assert response.json()["id"]==999
+    assert response.json()["id"]==855
     assert response.status==200
     # assert response.ok
 
