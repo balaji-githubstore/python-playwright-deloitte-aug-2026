@@ -8,7 +8,6 @@ with open("test_data/secret.json","r") as file:
 
 print(auth_token["token"])
 
-
 with sync_playwright() as p:
     api_context = p.request.new_context(
         base_url="https://api.github.com/")

@@ -7,6 +7,7 @@ print(Employee.company_name)
 
 emp1=Employee(1001,'kevin',50000)
 emp2=Employee(1002,'peter',40000)
+emp6=Employee()
 
 
 # emp1.emp_id=101
