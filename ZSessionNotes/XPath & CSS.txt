@@ -27,15 +27,21 @@ And-or
 //input[@type='file' and @id='edit-field-audited-balance-sheet-for-0-upload']
 
 parent-child
+parent - 
+//img[@alt='Go']/..
 
+child - 
+//div[@id='main']/ul/li/label/span
+//span[text()='Email']/*[name()='svg']
 
-ancestor-descendant
+ancestor - descendant 
+//img[@alt='Go']/ancestor::a
+//img[@alt='Go']/ancestor::td[@align='center']
 
-
-following - preceding 
-
-
-following sibling 
+descendant- 
+//div[@id='main']//span
+or 
+//div[@id='main']/descendant::span
 
 
 Example: verify in chrome - ctrl+f
@@ -75,4 +81,19 @@ input[id='firstName']
 
 page.locator("button:has-text('Allow all')").click()
 
+
+
+[{'id': 0, 'name': 'string'},{'id': 1, 'name': 'string1'},{'id': 2, 'name': 'string2'}]
+
+
+
+------------------------
+
+saul,saul123,Invalid credentials
+kim,kim123,Invalid credentials
+
+[
+[saul,saul123,Invalid credentials],
+[kim,kim123,Invalid credentials]
+]
 
